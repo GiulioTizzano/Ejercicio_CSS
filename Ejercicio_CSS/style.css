@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #ece9e6, #ffffff);
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #2c3e50, #3498db);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+.subtitulo {
+    font-size: 1.2em;
+    opacity: 0.9;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, #111, #2c3e50);
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+.sidenav a {
+    padding: 12px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #ddd;
+    display: block;
+    transition: 0.3s;
+}
+.sidenav a:hover {
+    background: rgba(255,255,255,0.1);
+    color: #fff;
+}
+.closeButton {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    color: #e74c3c;
+    cursor: pointer;
+}
+
+.openButton {
+    font-size: 20px;
+    cursor: pointer;
+    margin: 20px;
+    display: inline-block;
+    background: #3498db;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s;
+}
+.openButton:hover {
+    background: #2980b9;
+    transform: scale(1.05);
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+img {
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    margin: 20px 0;
+}
+
+.myLogin {
+    background: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 20px auto;
+    width: 280px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+.myLogin input[type="text"], 
+.myLogin input[type="password"] {
+    padding: 10px;
+    margin: 10px 0;
+    width: 90%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+.myLogin input[type="text"]:focus,
+.myLogin input[type="password"]:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 6px rgba(52,152,219,0.5);
+    outline: none;
+}
+.myLogin input[type="submit"] {
+    background: #27ae60;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 95%;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s, transform 0.2s;
+}
+.myLogin input[type="submit"]:hover {
+    background: #219150;
+    transform: translateY(-2px);
+}

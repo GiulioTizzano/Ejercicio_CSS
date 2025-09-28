@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Hola</title>
+    <link rel="icon" type="image/x-icon" href="images/images.jpeg">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Ejercicio HTML + CSS</h1>
+        <p class="subtitulo">Practicando Sistemas Web I 🚀</p>
+    </header>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closeButton" onclick="closeNav()">✖ Cerrar</a>
+        <a href="#">Acerca de</a>
+        <a href="#">Servicios</a>
+        <a href="#">Clientes</a>
+        <a href="#">Contacto</a>
+    </div>
+
+    <span class="openButton" onclick="openNav()">☰ Abrir menú</span>
+
+    <main>
+        <p>Primera página sencilla para <br>Sistemas Web <br>I</p> 
+        <p>Prueba párrafo</p>
+
+        <img src="images/images.jpeg" alt="Descripción" width="200" height="300">
+
+        <div class="myLogin">
+            <form action="gracias.html" method="get">
+                <input type="text" placeholder="Introduce tu nombre"> <br>
+                <input type="password" placeholder="Introduce una contraseña"> <br>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </main>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "200px";
+        }
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</body>
+</html>
